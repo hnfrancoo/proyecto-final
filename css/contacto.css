@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    margin-top: 8rem;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Cabecera*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    z-index: 3; 
+    background-image: url(../img/index/fondo.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.titulo-pagina{
+    height: 50px;
+    padding-left: 5%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none
+}
+.item-menu{
+    margin: 0 15px;
+    color: white;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.item-menu:hover{
+    background-color: whitesmoke;
+    border-radius: 50px;
+}
+.item-menu a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    overflow: scroll;
+}
+.item-menu a:hover{
+    color: black;
+}
+#menu{
+    display: none;
+    
+}
+.menu-icono{
+    display: flex;
+    font-size: 50px;
+    background-color: black;
+}
+label{
+    cursor: pointer;
+    display: none;
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgb(167, 154, 154);
+    padding: 100px;
+    margin: 20px auto;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 30px;
+}
+
+.contenedor h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: black;
+    text-decoration: underline;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.contenido{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.contenido .info, .contenido .formulario{
+    width: 50%;
+}
+.info{
+    padding-left: 10%;  
+}
+.info .col{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.info .col .icono{
+    color: darkblue;
+    margin-right: 10px;
+}
+
+.info .col p{
+    color: black;
+    
+}
+
+.info .redes-s{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info .redes-s a{
+    text-decoration: none;
+    background-color: black;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: rgb(20, 3, 70);
+    color: wheat;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow:  0px 3px 4px black;
+    
+}
+
+.info .redes-s a:hover{
+    box-shadow:  0 3px 8px black;
+}
+
+
+
+/*Estilos formulario*/
+.formulario{ 
+    width: 90%;
+    padding-right: 10%;
+    }
+
+.formulario input, 
+.formulario textarea{ 
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 12px 12px;
+    border: 1px solid black;
+    font-weight: 400;
+    outline: 0;
+}
+
+.formulario textarea{
+   max-width: 95%;
+   min-width: 95%;
+   min-height: 150px;
+   max-height: 150px;
+
+}
+
+.formulario input [type ='text']:focus,
+.formulario textarea :focus{
+    border: 2px solid blue;
+}
+
+.formulario button{
+    width: 100%;
+    padding: 15px 30px;
+    border: transparent;
+    background-color:rgb(20, 3, 80 );
+    color: wheat;
+    float: left;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.alert{
+width: 21.5rem;
+display: block;
+padding: 12px 20px;
+background-color: #f8d7da;
+color: #721c24;
+margin-bottom: 10px;
+border: 1px solid transparent;
+}
+
+/*otros dispositivos*/
+@media(max-width:991px) {
+    .menu{
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    label{
+        display: initial;
+        float: right;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #262727;
+        display: none;
+    }
+    .item-menu{
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    #menu:checked + .menu{
+        display: initial;
+    }
+
+    .contenedor{
+        width: 350px;
+        padding: 10px;
+    }
+
+    .contenido{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redes-s{
+        margin-bottom: .5rem;
+    }
+
+    .contenido .formulario, .contenido .info{
+        width: 100%;
+    }
+
+
+    .formulario input{
+        width: 100%;
+        padding-right: 0;
+    }
+
+}

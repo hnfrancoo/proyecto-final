@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Primer pagina web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Nuestros productos</title>
+
+    <!---hoja de estilos css-->
+    <link rel="stylesheet" href="..\css\prendas.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+    
+  </head>
+
+  <body>
+
+    <!--cabecera-->
+    <header id="header">
+      <!--header-->
+      <h2 class="titulo-pagina">NIKITA LIFESTYLE</h2>
+
+      
+      <label for="menu">
+        <i class="bi bi-list menu-icono"></i>
+      </label>
+      <input type="checkbox" id="menu">    
+      <!--Menu con opciones-->
+      <ul class="menu">
+        <li class="item-menu"> <a href="..\index.html">Inicio</a></li>
+        <li class="item-menu"> 
+          <a href=".\pages\productos.html">Nuestros productos</a>
+        </li>
+        <li class="item-menu"><a href="..\pages\contacto.html">Contacto</a></li>
+        <li class="item-menu">
+          <a href="carrito.html" class="boton-carrito">
+            <i class="bi bi-cart"></i><span class="numerito" id="numero">0</span>
+          </a>
+        </li>
+      </ul>
+      
+    </header>
+
+    <div class="menu-movil">
+      <button class="abrir-menu" id="abrir-menu">
+        <i class="bi bi-hand-index" style="transform: rotateZ(270deg);"></i>
+        Categorias
+      </button>
+    </div>
+
+    <!--Seccion de compra-->
+    <div class="contenedor">
+
+      <aside>
+        <button class="cerrar-menu" id="cerrar-menu">
+          <i class="bi bi-x"></i>
+        </button>
+        <h3 class="aside-titulo">CATEGORIAS</h3>
+
+        <ul class="--Menu">
+          <li>
+            <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index"></i>Todos los productos</button></li>
+          <li>
+            <button id="remeras" class="boton-menu boton-categoria "><i class="bi bi-hand-index"></i>Remeras</button></li>
+          <li>
+            <button id="camperas" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Camperas</button></li>
+          <li>
+            <button id="buzos" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Buzos</button></li>
+          <li>
+            <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Pantalones</button></li>
+          <li>
+            <button id="calzado" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Calzado</button>
+          </li>
+          <li>
+            <button id="accesorios" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Accesorios</button>
+          </li>
+          
+        </ul>
+      </aside>
+
+      <main>
+        <!--Productos-->
+
+        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        <div class="container-items" id="container-items">
+          <!--Aqui van los productos cargados con js-->
+        </div>
+      </main>
+    </div>
+  
+    <script src="https://kit.fontawesome.com/5fe31455d8.js" crossorigin="anonymous"></script>
+    <script src="..\scripts\productos.js"></script> 
+  </body>
+</html>

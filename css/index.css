@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    margin-top: 8rem;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*Cabecera*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100px;
+    z-index: 3; 
+    background-image: url(../img/index/fondo.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.titulo-pagina{
+    height: 50px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none
+}
+.item-menu{
+    margin: 0 15px;
+    color: white;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.item-menu:hover{
+    background-color: whitesmoke;
+    border-radius: 50px;
+}
+.item-menu a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    overflow: scroll;
+}
+.item-menu a:hover{
+    color: black;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    display: flex;
+    font-size: 50px;
+    background-color: black;
+}
+label{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+.contenido{
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*Carrusel */
+section div .carousel-item{
+    position: relative;
+    height: 400px;
+    z-index: -1;
+}
+
+.carousel-item img{
+    height: 100%;
+}
+section .carousel-inner {
+    height: 400px;
+}
+#carouselExampleIndicators{
+    margin: auto;
+}
+.carousel-indicators{
+    z-index: 1;
+}
+
+/*Productos en venta*/
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.producto{
+    border-radius: 10px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.producto:hover{
+    box-shadow: 0 10px 20px beige;
+}
+
+.producto img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .10s;
+}
+
+.producto .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.productos button{
+    width: 100%;
+    height: 50px;
+    background-color: darkgray;
+    border-radius: 20px;
+}
+
+.productos button a{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: medium;
+    text-decoration: solid;
+}
+
+/*ubicacion y video del local*/
+.local{
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+}
+
+.local h2{
+    background-color: beige;
+    color: black;
+    padding: .5rem;
+    border-radius: 20px;
+
+}
+
+.local-ubicacion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video-local{
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+/*beneficios y ofertas*/
+.beneficios h3{
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    background-color: beige;
+    color: black;
+}
+
+
+.beneficios .ofertas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.beneficios .credito{
+    width: 100%;
+    box-shadow: 0 0 20px beige;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.credito .text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 4rem 2rem;
+    padding: .5rem;
+}
+
+.oferta-imagen{
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+/* pie de pagina */
+
+footer{
+    background-color: #3f4142;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: #262727;
+}
+.footer .envios, 
+.footer .tarjetas, 
+.footer .contactanos{
+    width: 30%;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contactanos h3{
+    font-size: 15px;
+    text-align: center;
+    padding: .5rem;
+}
+.contactanos ul{
+    list-style: none;
+}
+.envios .bi, .tarjetas .bi{
+    font-size: 4rem;
+    padding: 0 4rem 0;
+}
+.contacto-iconos{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.contacto-iconos .bi{
+    font-size: 1.5rem;
+}
+
+footer small{
+    text-align: right;
+    background-color: #3f4142;
+}
+
+/*otros dispositivos*/
+@media(max-width:991px) {
+    .menu{
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    label{
+        display: initial;
+        float: right;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #262727;
+        display: none;
+    }
+    .item-menu{
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    #menu:checked + .menu{
+        display: initial;
+    }
+
+    .contenedor-productos{
+    grid-template-columns: 1fr 1fr;
+    }
+    .credito .text{
+        margin: 2rem;
+        padding: 0;
+        font-size: large;
+    }
+    footer{
+        height: 450px;
+        width: 100%;
+    }
+
+   .footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   }
+   .footer .envios, 
+   .footer .tarjetas
+   {
+    width: 33%;
+    border-bottom: 2px solid black;
+   }
+   .footer .contactanos{
+    width: 100%;
+   }
+}
+
+@media(max-width:400px){
+    .contenedor-productos{
+        grid-template-columns: 1fr;
+    }
+
+    .texto-beneficio{
+        display: none;
+    }
+    .credito .text{
+        margin: 2rem .5rem;
+        
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Primer pagina web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Carrito</title>
+
+    <!---hoja de estilos css-->
+    <link rel="stylesheet" href="..\css\prendas.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">       
+  </head>
+
+  <body>
+
+  <!--cabecera-->
+  <header id="header">
+    <!--header-->
+    <h2 class="titulo-pagina">NIKITA LIFESTYLE</h2>
+
+    
+    <label for="menu">
+      <i class="bi bi-list menu-icono"></i>
+    </label>
+    <input type="checkbox" id="menu">    
+    <!--Menu con opciones-->
+    <ul class="menu">
+      <li class="item-menu"> <a href="index.html">Inicio</a></li>
+      <li class="item-menu"> 
+        <a href="..\pages\productos.html">Nuestros productos</a>
+      </li>
+      <li class="item-menu"><a href="..\pages\contacto.html">Contacto</a></li>
+      <li class="item-menu">
+        <a href="carrito.html" class="boton-carrito">
+          <i class="bi bi-cart"></i><span class="numerito" id="numero">0</span>
+        </a>
+      </li>
+    </ul>
+    
+  </header>
+
+  <div class="menu-movil">
+    <button class="abrir-menu" id="abrir-menu">
+      <i class="bi bi-hand-index" style="transform: rotateZ(270deg);"></i>
+      Categorias
+    </button>
+  </div>
+
+  <!--Seccion de compra-->
+  <div class="contenedor">
+    <aside>
+      <button class="cerrar-menu" id="cerrar-menu">
+        <i class="bi bi-x"></i>
+      </button>
+      <h3 class="aside-titulo">CATEGORIAS</h3>
+      <ul class="--Menu">
+        <li>
+          <button class="boton-menu boton-categoria ">
+            <a href="productos.html"><i class="bi bi-arrow-return-left"></i> Seguir comprando</a>
+          </button>
+        </li>  
+        <li>
+          <a href="carrito.html" class="boton-menu active carrito ">
+           <i class="bi bi-cart"></i> 
+            Carrito 
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2 class="titulo-principal">Tu carrito</h2>
+      <div class="contenedor-carrito">
+        <p id="carrito-vacio" class="carrito-vacio">Aun no seleccionaste ningún producto</p>
+
+        <div id="carrito-items" class="carrito-items disabled">
+            
+        </div>
+
+        <div id="carrito-ahorro" class="carrito-ahorro disabled">
+          <div class="pagar-efectivo">
+            <button id="efectivo">Pagar en efectivo</button> 
+          </div>
+
+
+          
+        </div>
+
+        <div id="carrito-acciones" class="carrito-acciones disabled">
+          <div class="carrito-acciones-izquierda">
+            <button class="carrito-acciones-vaciar" id="acciones-vaciar">Vaciar carrito</button>
+          </div>
+
+          <div class="carrito-acciones-derecha">
+            <div class="carrito-acciones-total">
+              <p>Total:</p>
+              <p id="total">$4000</p>
+            </div>
+            <button class="carrito-acciones-comprar" id="acciones-comprar">Confirmar compra</button>
+          </div>
+        </div>
+
+        <h3 id="carrito-comprado" class="carrito-comprado disabled">¡Gracias por elegir nuestros productos!<i class="bi bi-emoji-laughing"></i><i class="bi bi-emoji-laughing"></i></h3>
+
+      </div>
+    </main>
+
+
+
+    </div>
+
+    <script src="..\scripts\carrito.js"></script>
+    
+
+        
+  </body>
+</html>
+
+
+ 

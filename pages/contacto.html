@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Description" content="Primer pagina web">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <!---hoja de estilos css-->
+  <link rel="stylesheet" href="..\css\contacto.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
+
+
+  <script src="https://kit.fontawesome.com/5fe31455d8.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="..\scripts\contacto.js"></script>
+ </head>
+
+ <body>
+
+  <!--cabecera-->
+  <header id="header">
+    <!--header-->
+    <h2 class="titulo-pagina">NIKITA LIFESTYLE</h2>
+
+    
+    <label for="menu">
+      <i class="bi bi-list menu-icono"></i>
+    </label>
+    <input type="checkbox" id="menu">    
+    <!--Menu con opciones-->
+    <ul class="menu">
+      <li class="item-menu"> <a href="..\index.html">Inicio</a></li>
+      <li class="item-menu"> 
+        <a href="..\html\productos.html">Nuestros productos</a>
+      </li>
+      <li class="item-menu"><a href=".\html\contacto.html">Contacto</a></li>
+    </ul>
+    
+  </header>
+
+  <main class="main">
+    <div class="contenedor">
+
+      <h1>Formulario de Contacto</h1>
+
+      <div class="contenido">
+
+        <div class="info">
+
+          <div class="col">
+            <i class="icono fa-solid fa-map-location-dot"></i>
+            <p>San Martin 1252</p>
+          </div>
+
+          <div class="col">
+            <i class="icono fa-sharp fa-solid fa-envelope"></i>
+            <p>nikitalifestyle@hotmail.com</p>
+          </div>
+
+          <div class="col">
+            <i class="icono fa-solid fa-phone"></i>
+            <p>011 255 652</p>
+          </div>
+
+          <div class="redes-s">
+            <a href="https://www.facebook.com/nikita.concepcion" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/nikitalifestyle.concepcion/" target="_blank"><i
+                class="fa-brands fa-instagram" style="color: #bc06a4;"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=543865512856" target="_blank"><i class="fa-brands fa-whatsapp"
+                style="color: #36c11a;"></i></a>
+          </div>
+
+
+        </div>
+
+        <form action="" method="post" class="formulario">
+
+          <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+          <input type="text" name="correo" placeholder="Correo electrónico" id="correo">
+          <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+          <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+          <button class="button" onclick="formulario(event);">Enviar</button>
+        </form>
+
+        <script src="..\scripts\contacto.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      </div>
+    </div>
+  </main>
+ </body>
+
+</html>
