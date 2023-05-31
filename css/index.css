@@ -337,6 +337,11 @@ footer small{
     width: 100%;
    }
 }
+@media (max-width: 875px){
+    .contenedor-productos{
+        grid-template-columns: 1fr;
+    }
+}
 
 @media(max-width:400px){
     .contenedor-productos{
