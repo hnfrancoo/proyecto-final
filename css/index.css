@@ -330,7 +330,7 @@ footer small{
    .footer .envios, 
    .footer .tarjetas
    {
-    width: 33%;
+    width: 50%;
     border-bottom: 2px solid black;
    }
    .footer .contactanos{
